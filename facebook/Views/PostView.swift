@@ -14,6 +14,7 @@ struct PostView: View {
             Spacer()
             Text(post?.title ?? "").bold().font(.system(size: 26)).padding()
             Spacer()
+            
             PostImageView(imgUrl: post?.urlToImage ?? "",maxWidth: 300,maxHeight: 200)
             Spacer()
             Text(post?.description ?? "").padding()
